@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8"> 
+	</head>
+	<body>
+		<img src="img/(145).jpg">
+		
+		<form action="action.php" method="post">
+			
+		<label>
+		이름 : 
+		</label>
+		<input type "text" name="name"></br>
+		<label>
+		연락처 : 
+		</label>
+		<input type "text" name="phone"></br>
+		<label>
+		날짜 : 
+		</label>
+		<input type "date" name="date"></br>
+	
+		<filedset>
+			<legend>
+			세부사항
+			</legend>
+			<label>	이용시간 : </label> 
+			</br>
+			<input type="radio" name="time" value="오전 9시" checked="checked"/> 오전 9시
+			<input type="radio" name="time" value="오후 12시"/> 오후 12시
+			<input type="radio" name="time" value="오후 6시"/> 오후 6시
+			</br>
+			<label> 사전 확인 사항 : </label> 
+			</br>
+			<input type="checkbox" name="service[]" value="비흡연석" checked="checked" /> 비흡연석
+			<input type="checkbox" name="service[]" value="창가쪽" /> 창가쪽
+			<input type="checkbox" name="service[]" value="주차이용" /> 주차이용
+			</br>
+			<label> 선호하는 셰프 </label> 
+			</br>
+			<select name="chef">
+				<option value="이용복">이용복 쉐프</option>
+				<option value="최현석">최현석 쉐프</option>
+				<option value="강레오">강레오 쉐프</option>
+				
+		</filedset>
+
+		<p><input type="submit" value="예약합니다" /></p>
+
+		
+		</form>	
+	</body>
+</html>
